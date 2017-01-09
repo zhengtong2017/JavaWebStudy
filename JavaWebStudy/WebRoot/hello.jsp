@@ -3,6 +3,6 @@
   <title>helloapp</title>
 </head>
 <body>
-  <b>Hello : <%= request.getAttribute("USER") %></b>
+  <b>hello:<%= request.getAttribute("USER") %></b>
 </body>
 </html>
