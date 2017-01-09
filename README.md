@@ -1,2 +1,0 @@
-# JavaWebStudy
-Learn JavaWeb !
