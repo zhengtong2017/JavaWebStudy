@@ -6,23 +6,59 @@
 
 <web-app>
 
-  <servlet>
-    <servlet-name>dispatcher</servlet-name>
-    <servlet-class>com.zhengtong.DispatcherServlet</servlet-class>
-  </servlet>
+	<servlet>
+		<servlet-name>dispatcher</servlet-name>
+		<servlet-class>com.zhengtong.DispatcherServlet</servlet-class>
+	</servlet>
 
-  <servlet-mapping>
-    <servlet-name>dispatcher</servlet-name>
-    <url-pattern>/dispatcher</url-pattern>
-  </servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>dispatcher</servlet-name>
+		<url-pattern>/dispatcher</url-pattern>
+	</servlet-mapping>
 
-  <welcome-file-list>
-    <welcome-file>login.htm </welcome-file>
-  </welcome-file-list>
 
-  <taglib>
-    <taglib-uri>/mytaglib</taglib-uri>
-    <taglib-location>/WEB-INF/mytaglib.tld</taglib-location>
-  </taglib>
 
+
+	<servlet>
+		<servlet-name>cookie</servlet-name>
+		<servlet-class>com.zhengtong.CookieServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>cookie</servlet-name>
+		<url-pattern>/cookie</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>cookie1</servlet-name>
+		<servlet-class>com.zhengtong.Cookie1Servlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>cookie1</servlet-name>
+		<url-pattern>/cookie1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>main</servlet-name>
+		<servlet-class>com.zhengtong.MainServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>main</servlet-name>
+		<url-pattern>/main</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>greet</servlet-name>
+		<servlet-class>com.zhengtong.GreetServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>greet</servlet-name>
+		<url-pattern>/greet</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>login.htm </welcome-file>
+	</welcome-file-list>
 </web-app>
